@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Russo+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #94b8cc;
+}
+
+.container {
+  max-width: 1160px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mr-10 {
+  margin-right: 10px;
+}
+
+.link {
+  color: white;
+  text-decoration: none;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.movie {
+  min-height: 80vh;
+}
+.movie .movie_title {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+  font-size: 56px;
+  -webkit-text-stroke: 0.5px #ffffff;
+  line-height: 80%;
+  padding: 20px 0;
+}
+@media (max-width: 899px) {
+  .movie .movie_title {
+    font-size: 46px;
+  }
+}
+@media (max-width: 599px) {
+  .movie .movie_title {
+    font-size: 36px;
+  }
+}
+.movie .movie_card {
+  justify-content: space-between;
+  align-content: stretch;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+@media (max-width: 899px) {
+  .movie .movie_card {
+    justify-content: center;
+  }
+}
+.movie .movie_card .movie_card_poster {
+  overflow: hidden;
+  width: 400px;
+  height: 300px;
+  border: 2px solid #9f9e9e;
+  -webkit-box-shadow: 0 0 13px 3px rgb(209, 209, 209);
+  -moz-box-shadow: 0 0 13px 3px rgb(209, 209, 209);
+  box-shadow: 0 0 13px 3px rgb(209, 209, 209);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center top;
+}
+.movie .movie_card .movie_card__overview {
+  text-align: center;
+  padding: 20px 30px;
+  width: 100%;
+  font-family: "Russo One", sans-serif;
+}
+@media (max-width: 599px) {
+  .movie .movie_card .movie_card__overview {
+    padding: 10px 0 0;
+    font-size: 12px;
+  }
+}
+.movie .movie_card .movie_card_content {
+  flex-wrap: wrap;
+  font-size: 18px;
+  font-family: "Russo One", sans-serif;
+  text-shadow: 1px 2px 3px lightgrey;
+  max-width: 50%;
+  padding: 10px;
+}
+@media (max-width: 899px) {
+  .movie .movie_card .movie_card_content {
+    order: 1;
+    max-width: 100%;
+  }
+}
+.movie .movie_card p {
+  margin-bottom: 8px;
+}
+@media (max-width: 599px) {
+  .movie .movie_card .movie_card__release, .movie .movie_card .movie_card__runtime {
+    font-size: 11px;
+  }
+}
+.movie .movie_card .movie_card__companies {
+  width: 100%;
+  padding: 5px 0;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+@media (max-width: 899px) {
+  .movie .movie_card .movie_card__companies {
+    justify-content: space-around;
+  }
+}
+.movie .movie_card .movie_card__companies h3 {
+  font-size: 20px;
+  -webkit-text-stroke: 0.1px #ffffff;
+  font-family: "Permanent Marker", cursive;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5px;
+}
+.movie .movie_card .movie_card__companies span {
+  text-align: center;
+  font-size: 16px;
+  color: white;
+  margin: 0 10px 15px;
+  -webkit-text-stroke: 1px #000000;
+  position: relative;
+  transition: 0.16s;
+}
+.movie .movie_card .movie_card__companies span:hover {
+  cursor: pointer;
+  transition: 0.16s;
+  color: #539ede;
+}
+
+/*# sourceMappingURL=styles.css.map */
